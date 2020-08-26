@@ -33,6 +33,11 @@ header{
     margin-left: 35px;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 /* SUBHEADER */
 
 
@@ -92,7 +97,7 @@ nav ul li{
 /* GALLERY */
 
 .gallery {
-    margin-top: 20px;
+    margin: 30px;
 }
 
 .gallery__content{
@@ -106,7 +111,7 @@ nav ul li{
     width: 100%;
     height: 100%;
     display: block;
-    padding: 10px 10px;
+    padding: 0.5vw
 }
 
 .gallery__p1{
@@ -117,8 +122,227 @@ nav ul li{
     grid-column: 3 / span 2;
 }
 
-.gallery__p3 {
+/* PRODUCTS */
+.products{
+    color: black;
+    text-align: center;
+    background-color: #f9f8f8;
+    padding-bottom: 3%;
+}
+
+.products--blue{
+    color: #1565c0
+}
+
+.products p {
+    font-size: 0.8rem;
+}
+
+.products__title{
+    padding: 1.5%;
+    font-size: 2.0rem;
+}
+
+.products__content{
+    display: flex;
+    max-width: 77%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.products__item {
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    margin: 0 0.8%;
+    line-height: 30px;
+}
+
+.products__item img {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+.products__item p span{
+    color: gray;
+    text-decoration: line-through;
+}
+
+.products__item button {
+    padding: 3%;
+    background-color: #fff;
+    border: 2px solid orange;
+    margin-bottom: 3%;
+}
+
+/* PROMO */
+
+.promo{
+    background: url(../img/ban1.jpg);
+    background-position: center center;
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+     /* This is what makes the background image rescale based
+     on the container's size */
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+}
+
+.promo__content p{
+    font-size: 4rem;
+    padding-bottom: 9%;
+}
+
+.promo__content p:first-of-type{
+    font-size: 3rem;
+}
+
+.promo__content button {
+    padding: 1.5% 3%;
+    background-color: #f1a228;
+    color: white;
+    border-width: 0px
+}
+
+/*Reusing products css code for arrivals section */
+.arrivals{
+    background-color: #fff;
+}
+
+/* TRENDS */
+
+.trends {
+    text-align: center;
+    background-color: #f9f8f8;
+}
+
+.trends h2{
+    padding: 1.5%;
+    font-size: 2.0rem;
+}
+
+.trends__content {
+    width: 79%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    text-align: center;
+    /* position: relative; */
+}
+
+.trends__items{
+    width: 33%;
+    position: relative;
+}
+
+.trends__items img { 
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 2%;
+}
+
+.trends__discount{
+    position: absolute;
+    background-color: #1565c0;
+    width: 12%;
+    height: 17%;
+    border-radius: 50%;
+    right: 4%;
+    top: 7%;
 
 }
 
-.gallery__p1
+.trends__discount p{
+    margin-top: 25%;
+    font-size: 1.1vw;
+}
+
+.trends__category{
+    position: absolute;
+    background-color: rgba(21, 101, 192, 0.6);
+    width: 96%;
+    /* margin: 2%; */
+    margin-left: 2%;
+    bottom: 3%;
+    height: 16%;
+    line-height: 16%;
+}
+
+.trends__category p {
+    margin: 5%;
+    font-size: 1.4vw;
+}
+
+/* FOOTER */
+
+footer{
+    text-align: left;
+    background-color: #1565c0;
+}
+
+.copyright {
+    background-color: #000;
+}
+
+.content{
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    justify-content: space-between;
+    font-size: 1.1vw;
+}
+
+.content li {
+    list-style: none;
+    margin-bottom: 6%;
+    /* padding: 3%; */
+}
+
+.content__items{
+    flex-basis: 25%;
+    flex-grow: 0;
+    padding-left: 5%;
+}
+
+.content__items h2 {
+    font-size: 2vw;
+    padding-top: 15%;
+    padding-bottom: 8%;
+}
+
+.content__contact li {
+    padding-left: 5px;
+    
+}
+
+.content__contact i {
+    padding-right: 10px;
+}
+
+.content__items:last-of-type {
+    padding-left: 0;
+    margin-top: -0.7%;
+}
+
+/* COPYRIGHT */
+
+.copyright__content{
+    width: 78%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0;
+    font-size: 1.3vw;
+}
+
+.copyright__content img {
+    width: 11vw;
+}
